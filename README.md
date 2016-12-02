@@ -35,6 +35,17 @@ To create synchronisation between two people, one can think about two footsteps 
 ##How?
 We measure the EEG signal with Emotiv EPOC on two electrodes on the occipital cortex (O1 and O2) and extract the amplitude of a certain frequency (in the case of the demo, alpha, since it can be influenced easily by closing the eyes). This number is streamed to the buffer and a Processing script reads the amplitude information. Then, through the speakers and LEDs we respectively present binaural beats and flashing light, in, respectively, volume and intensity that corresponds with the amplitude of the desired frequency. Binaural beats work as such: the left ear and the right ear are presented with different frequencies, of which the difference is the frequency that you are aiming for (i.e. a 140Hz tone in the left ear and a 164Hz tone in the right ear induces a 24Hz (beta) brain oscillation). The LEDs create a fast-acting steady-state visually evoked potential (SSVEP), which also is studied to robustly influences brain rhythms. 
 
+Specific Actions:
+
+- Use programming language 'Processing'
+- Use the Emotiv EPOC headgear
+- Connect 2 potentiometers to an Arduino
+- Connect 2 LEDs to the potentiometers
+- Connect 2 sliders to the Arduino
+- Make sure the LEDs can be controlled individually by each slider
+- Attach the 2 LEDs to the glasses, make sure the light faces towards the glasses
+- The sliders allow you to change the Herz frequency ranging from 1 - 40 Hz
+
 ##Scientific resources
 Efficacy of binaural beats in ADHD:
 
